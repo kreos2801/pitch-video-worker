@@ -1,0 +1,48 @@
+# Rendu vidéo programmatique — déclenché par la Google Sheet (Apps Script → API REST GitHub,
+# événement workflow_dispatch). Aucune intervention manuelle : la Sheet reçoit l'URL de la vidéo.
+name: Rendu pitch vidéo
+
+on:
+  workflow_dispatch:
+    inputs:
+      job_id:
+        description: "ID_Execution de la ligne PRODUCTION"
+        required: true
+        type: string
+
+concurrency:
+  group: render-${{ inputs.job_id }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: worker/requirements.txt
+
+      - name: Dépendances système (FFmpeg, polices)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+
+      - name: Dépendances Python
+        run: pip install -r worker/requirements.txt
+
+      - name: Rendu et publication
+        env:
+          WEBAPP_URL: ${{ secrets.WEBAPP_URL }}
+          WORKER_TOKEN: ${{ secrets.WORKER_TOKEN }}
+          # L'entrée passe par une variable d'environnement (pas d'interpolation directe
+          # dans le shell) : protège contre l'injection de commandes via job_id.
+          JOB_ID: ${{ inputs.job_id }}
+        run: |
+          [[ "$JOB_ID" =~ ^[A-Za-z0-9_-]{3,64}$ ]] || { echo "job_id invalide"; exit 1; }
+          python worker/render.py --job "$JOB_ID"

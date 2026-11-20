@@ -1,0 +1,59 @@
+{
+ "titre_video": "Camille Roussel — Consultante Cybersécurité GRC junior",
+ "nom_affiche": "Camille ROUSSEL",
+ "destinataire": "Orvane Conseil — Consultant(e) Cybersécurité GRC junior",
+ "email_destinataire": "recrutement@orvane-conseil.example",
+ "scenes": [
+  {
+   "scene_id": 1, "type": "intro",
+   "titre_ecran": "Ma candidature en une minute",
+   "mots_cles_ecran": ["Consultante GRC", "EBIOS RM", "NIS2"],
+   "texte_voix_off": "Bonjour ! Je suis Camille Roussel, ingénieure en cybersécurité, et je candidate au poste de consultante GRC junior chez Orvane Conseil.",
+   "chiffre_cle": {"valeur": "", "libelle": ""},
+   "sources": []
+  },
+  {
+   "scene_id": 2, "type": "profil",
+   "titre_ecran": "Technique et gouvernance, les deux à la fois",
+   "mots_cles_ecran": ["Analyse de risques", "Cartographie des actifs", "Ateliers métiers"],
+   "texte_voix_off": "Pendant mon stage de fin d'études en cabinet de conseil, j'ai conduit 12 entretiens métiers pour une analyse de risques EBIOS RM et cartographié 40 actifs essentiels.",
+   "chiffre_cle": {"valeur": "12", "libelle": "entretiens métiers pour une analyse EBIOS RM"},
+   "sources": ["Conduite de 12 entretiens métiers pour une analyse de risques EBIOS RM.", "Cartographie de 40 actifs essentiels et de leurs dépendances."]
+  },
+  {
+   "scene_id": 3, "type": "preuve",
+   "titre_ecran": "Des résultats mesurables",
+   "mots_cles_ecran": ["Script Python", "Revue des habilitations", "Sensibilisation phishing"],
+   "texte_voix_off": "J'automatise aussi : mon script Python a réduit de 35 % le délai de revue des habilitations. Et ma campagne de sensibilisation a fait passer le taux de clic de 21 % à 9 %.",
+   "chiffre_cle": {"valeur": "-35 %", "libelle": "sur le délai de revue des habilitations"},
+   "sources": ["Script Python de revue des habilitations : délai de revue réduit de 35 %.", "taux de clic passé de 21 % à 9 %"]
+  },
+  {
+   "scene_id": 4, "type": "adequation",
+   "titre_ecran": "Vos missions, mes preuves",
+   "mots_cles_ecran": ["EBIOS RM", "ISO 27001", "Vulgarisation"],
+   "texte_voix_off": "Vos missions sont au cœur de mon parcours : analyses de risques, conformité ISO 27001, revues des habilitations et sensibilisation. Et je sais expliquer un risque cyber à un public non technique.",
+   "chiffre_cle": {"valeur": "", "libelle": ""},
+   "sources": ["La capacité d'expliquer un risque cyber à un public non technique.", "ISO 27001 / 27005, EBIOS Risk Manager, NIS2, RGPD, rédaction de PSSI"]
+  },
+  {
+   "scene_id": 5, "type": "cta",
+   "titre_ecran": "Parlons de vos projets",
+   "mots_cles_ecran": ["Démarrage février 2027", "Nantes"],
+   "texte_voix_off": "Je serais ravie d'échanger avec vous sur les projets de vos clients dans l'énergie. Réservez un créneau grâce au lien affiché à l'écran. À très bientôt !",
+   "chiffre_cle": {"valeur": "", "libelle": ""},
+   "sources": []
+  }
+ ],
+ "adequation": [
+  {"exigence": "Analyses de risques EBIOS RM", "couvert_par": ["CANDIDAT"], "preuve": "Conduite de 12 entretiens métiers pour une analyse de risques EBIOS RM."},
+  {"exigence": "Normes ISO 27001 / 27005", "couvert_par": ["CANDIDAT"], "preuve": "ISO 27001 / 27005, EBIOS Risk Manager, NIS2, RGPD, rédaction de PSSI"},
+  {"exigence": "Audits et revues des habilitations", "couvert_par": ["CANDIDAT"], "preuve": "Audit organisationnel, revue des habilitations, contrôles CIS Controls"},
+  {"exigence": "Vulgarisation auprès de non-techniciens", "couvert_par": ["CANDIDAT"], "preuve": "La capacité d'expliquer un risque cyber à un public non technique."},
+  {"exigence": "Anglais professionnel", "couvert_par": ["CANDIDAT"], "preuve": "Anglais C1 (TOEIC 945)"}
+ ],
+ "email": {
+  "objet": "Candidature Consultante GRC junior — ma présentation en vidéo",
+  "corps": "Madame, Monsieur,\nJe vous propose de découvrir ma candidature au poste de consultante cybersécurité GRC junior sous forme d'une courte vidéo.\nVous y verrez comment mon expérience en analyse de risques EBIOS RM et en revue des habilitations répond à vos missions.\nJe serais heureuse d'en échanger avec vous lors d'un entretien.\nBien cordialement,"
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "titre_video": "Proposition d'équipe — Projet AZUR-NIS2",
+ "nom_affiche": "Néotek Conseil",
+ "destinataire": "Valmora Énergies — Projet AZUR-NIS2",
+ "email_destinataire": "",
+ "scenes": [
+  {
+   "scene_id": 1, "type": "intro",
+   "titre_ecran": "Une équipe sur-mesure pour AZUR-NIS2",
+   "mots_cles_ecran": ["Cloud Azure", "Détection", "NIS2"],
+   "texte_voix_off": "Bonjour ! Pour votre projet AZUR-NIS2, Néotek Conseil vous propose une équipe de deux experts complémentaires, prête à démarrer en janvier 2027.",
+   "chiffre_cle": {"valeur": "", "libelle": ""},
+   "sources": []
+  },
+  {
+   "scene_id": 2, "type": "profil",
+   "titre_ecran": "Consultant 1 : architecte cloud et sécurité",
+   "mots_cles_ecran": ["Azure · Entra ID", "Terraform", "Kubernetes (AKS)"],
+   "texte_voix_off": "Le Consultant 1 est architecte cloud certifié Azure, avec 9 ans d'expérience. Il a migré 85 applications vers Azure en 14 mois et industrialise les déploiements avec Terraform.",
+   "chiffre_cle": {"valeur": "85", "libelle": "applications migrées vers Azure en 14 mois"},
+   "sources": ["Migration de 85 applications vers Azure en 14 mois, sans interruption de service majeure.", "Architecte Cloud & Sécurité — 9 ans d'expérience"]
+  },
+  {
+   "scene_id": 3, "type": "profil",
+   "titre_ecran": "Consultant 2 : gouvernance et détection",
+   "mots_cles_ecran": ["EBIOS RM", "ISO 27001", "Sentinel · KQL"],
+   "texte_voix_off": "Le Consultant 2 réunit gouvernance et détection : 4 analyses de risques EBIOS RM dans l'énergie, une feuille de route NIS2, et 45 règles de détection sur Microsoft Sentinel.",
+   "chiffre_cle": {"valeur": "45", "libelle": "règles de détection KQL sur Microsoft Sentinel"},
+   "sources": ["Pilotage de 4 analyses de risques EBIOS RM pour des opérateurs du secteur énergie.", "Création de 45 règles de détection KQL sur Microsoft Sentinel."]
+  },
+  {
+   "scene_id": 4, "type": "competences",
+   "titre_ecran": "Deux expertises, un seul objectif",
+   "mots_cles_ecran": ["Plateforme Azure sécurisée", "Infrastructure as Code", "Conformité NIS2"],
+   "texte_voix_off": "Ensemble, ils couvrent la plateforme Azure sécurisée, l'Infrastructure as Code, la détection des incidents et l'analyse de risques exigée par NIS2.",
+   "chiffre_cle": {"valeur": "", "libelle": ""},
+   "sources": ["Construire une plateforme Azure sécurisée (landing zone, gestion des identités, segmentation).", "Conduire l'analyse de risques et produire la feuille de route de conformité NIS2."]
+  },
+  {
+   "scene_id": 5, "type": "adequation",
+   "titre_ecran": "Votre brief, couvert point par point",
+   "mots_cles_ecran": ["Preuves vérifiées"],
+   "texte_voix_off": "Chaque compétence attendue dans votre brief est couverte par au moins un des deux consultants, preuves à l'appui dans leurs parcours.",
+   "chiffre_cle": {"valeur": "", "libelle": ""},
+   "sources": ["Équipe cible : 2 consultants, présence sur site 2 jours par semaine à Nantes."]
+  },
+  {
+   "scene_id": 6, "type": "cta",
+   "titre_ecran": "Organisons la session de cadrage",
+   "mots_cles_ecran": ["Démarrage janvier 2027", "Nantes"],
+   "texte_voix_off": "Réservez dès maintenant une session de cadrage grâce au lien affiché à l'écran. À très bientôt !",
+   "chiffre_cle": {"valeur": "", "libelle": ""},
+   "sources": []
+  }
+ ],
+ "adequation": [
+  {"exigence": "Architecture Azure et sécurité des identités", "couvert_par": ["C1"], "preuve": "Microsoft Azure (landing zones, Azure Policy, Entra ID), AWS (notions)"},
+  {"exigence": "Terraform et chaîne CI/CD", "couvert_par": ["C1"], "preuve": "Terraform, Ansible, GitLab CI, Azure DevOps"},
+  {"exigence": "Microsoft Sentinel et règles de détection", "couvert_par": ["C2"], "preuve": "Création de 45 règles de détection KQL sur Microsoft Sentinel."},
+  {"exigence": "EBIOS RM, ISO 27001 et NIS2", "couvert_par": ["C2"], "preuve": "ISO 27001 / 27005, EBIOS Risk Manager, directive NIS2, PSSI, plans de traitement des risques"},
+  {"exigence": "Anglais professionnel", "couvert_par": ["C1", "C2"], "preuve": "Anglais (professionnel, C1)"}
+ ],
+ "email": {
+  "objet": "Projet AZUR-NIS2 : notre proposition d'équipe en vidéo",
+  "corps": "Bonjour,\nPour répondre à votre consultation sur le projet AZUR-NIS2, nous vous proposons une équipe de deux consultants complémentaires.\nLa vidéo ci-dessous présente leurs parcours et la couverture de votre brief, exigence par exigence.\nNous serions ravis d'organiser une session de cadrage avec vous.\nBien cordialement,"
+ }
+}

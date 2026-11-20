@@ -1,0 +1,6 @@
+tests/out/
+out/
+__pycache__/
+*.pyc
+node_modules/
+.env
